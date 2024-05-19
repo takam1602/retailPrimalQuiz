@@ -1,6 +1,39 @@
 src,retailCut,species,primal
-./img/b_rumpsteak.jpg,Rump Steak,Beef,Rump
 ./img/b_rumpsteak7.jpg,Rump Steak,Beef,Rump
 ./img/b_rumpsteak8.jpg,Rump Steak,Beef,Rump
-./img/b_shinbeefbonein.jpg,Shin Beef Bone-in,Beef,Shin
-./img/b_shinbeefboneless2.jpg,Shin Beef Boneless,Beef,Shin
+./img/b_rumpsteak.jpg,Rump Steak,Beef,Rump
+./img/b_shinbeefbonein.jpg,,Beef,
+./img/b_shinbeefboneless2.jpg,,Beef,
+./img/b_shinbeefboneless.jpg,,Beef,
+./img/b_silversidesteak.jpg,,Beef,
+./img/b_sirloinsteakboneless2.jpg,,Beef,
+./img/b_sirloinsteakboneless3.jpg,,Beef,
+./img/b_sirloinsteakboneless4.jpg,,Beef,
+./img/b_sirloinsteakboneless5.jpg,,Beef,
+./img/b_sirloinsteakboneless6.jpg,,Beef,
+./img/b_striploinsteakbonein.jpg,,Beef,
+./img/b_tbonesteak2.jpg,,Beef,
+./img/b_tbonesteak3.jpg,,Beef,
+./img/b_tbonesteak4.jpg,,Beef,
+./img/b_tbonesteak.jpg,,Beef,
+./img/b_topsidesteak2.jpg,,Beef,
+./img/b_topsidesteak.jpg,,Beef,
+./img/b_bladesteakbonein.jpg,,Beef,
+./img/b_bladesteakboneless.jpg,,Beef,
+./img/b_chucksteak2.jpg,,Beef,
+./img/b_chucksteak3.jpg,,Beef,
+./img/b_chucksteak.jpg,,Beef,
+./img/b_filletsteak2.jpg,,Beef,
+./img/b_filletsteak3.jpg,,Beef,
+./img/b_oysterbladesteak2.jpg,,Beef,
+./img/b_oysterbladesteak.jpg,,Beef,
+./img/b_ribeyesteak2.jpg,,Beef,
+./img/b_ribeyesteak3.jpg,,Beef,
+./img/b_ribeyesteak.jpg,,Beef,
+./img/b_ribsteakbonein.jpg,,Beef,
+./img/b_roundsteak2.jpg,,Beef,
+./img/b_roundsteak.jpg,,Beef,
+./img/b_rump2.jpg,,Beef,
+./img/b_rumpsteak3.jpg,,Beef,
+./img/b_rumpsteak5.jpg,,Beef,
+./img/b_rumpsteak6.jpg,,Beef
