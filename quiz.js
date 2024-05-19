@@ -9,9 +9,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const primalInput = document.getElementById('primal-name');
 
     // CSVファイルの読み込みと解析
-    Papa.parse('retailIndex.csv', {
+    Papa.parse('retailIndex_utf8.csv', {
         download: true,
         header: true,
+        skipEmptyLines: true,
         complete: function(results) {
             console.log("CSV読み込み完了:", results); // デバッグメッセージ
             if (results.errors.length > 0) {
