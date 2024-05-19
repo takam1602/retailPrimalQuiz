@@ -14,7 +14,12 @@ document.addEventListener('DOMContentLoaded', function() {
         header: true,
         complete: function(results) {
             console.log("CSV読み込み完了:", results); // デバッグメッセージ
+            if (results.errors.length > 0) {
+                console.error("CSVパースエラー:", results.errors); // エラーメッセージ
+                return;
+            }
             images = results.data;
+            console.log("パースされたデータ:", images); // デバッグメッセージ
             loadRandomImage();
         },
         error: function(error) {
@@ -30,8 +35,9 @@ document.addEventListener('DOMContentLoaded', function() {
     function loadRandomImage() {
         if (images.length > 0) {
             currentImageIndex = Math.floor(Math.random() * images.length);
-            meatImage.src = images[currentImageIndex].src;
-            console.log("表示する画像:", images[currentImageIndex].src); // デバッグメッセージ
+            const selectedImage = images[currentImageIndex];
+            console.log("選択された画像データ:", selectedImage); // デバッグメッセージ
+            meatImage.src = selectedImage.src;
             resultDiv.textContent = '';
             retailCutInput.value = '';
             speciesInput.value = '';
