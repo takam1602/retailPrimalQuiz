@@ -1,4 +1,4 @@
-pic name, retail cut name,primal name, species
+src,retailCut,species,primal
 ./img/b_rumpsteak8.jpg           ,rump steak,rump,beef
 ./img/b_rumpsteak9.jpg           ,rump steak,rump,beef
 ./img/b_rumpsteak.jpg            ,rump steak,rump,beef
