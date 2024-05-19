@@ -1,14 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const images = [
-        {src: 'b_rumpsteak.jpg', retailCut: 'Rump Steak', species: 'Beef', primal: 'Rump'},
-        {src: 'b_rumpsteak7.jpg', retailCut: 'Rump Steak', species: 'Beef', primal: 'Rump'},
-        {src: 'b_rumpsteak8.jpg', retailCut: 'Rump Steak', species: 'Beef', primal: 'Rump'},
-        {src: 'b_shinbeefbonein.jpg', retailCut: 'Shin Beef Bone-in', species: 'Beef', primal: 'Shin'},
-        {src: 'b_shinbeefboneless2.jpg', retailCut: 'Shin Beef Boneless', species: 'Beef', primal: 'Shin'}
-    ];
-
-    let currentImageIndex = -1;
-
+    let images = [];
     const meatImage = document.getElementById('meat-image');
     const resultDiv = document.getElementById('result');
     const nextBtn = document.getElementById('next-btn');
@@ -17,19 +8,35 @@ document.addEventListener('DOMContentLoaded', function() {
     const speciesInput = document.getElementById('species');
     const primalInput = document.getElementById('primal-name');
 
+    // CSVファイルの読み込みと解析
+    Papa.parse('temp.csv', {
+        download: true,
+        header: true,
+        complete: function(results) {
+            images = results.data;
+            loadRandomImage();
+        }
+    });
+
     nextBtn.addEventListener('click', loadRandomImage);
     answerBtn.addEventListener('click', checkAnswer);
 
+    let currentImageIndex = -1;
+
     function loadRandomImage() {
-        currentImageIndex = Math.floor(Math.random() * images.length);
-        meatImage.src = images[currentImageIndex].src;
-        resultDiv.textContent = '';
-        retailCutInput.value = '';
-        speciesInput.value = '';
-        primalInput.value = '';
+        if (images.length > 0) {
+            currentImageIndex = Math.floor(Math.random() * images.length);
+            meatImage.src = images[currentImageIndex].src;
+            resultDiv.textContent = '';
+            retailCutInput.value = '';
+            speciesInput.value = '';
+            primalInput.value = '';
+        }
     }
 
     function checkAnswer() {
+        if (currentImageIndex === -1) return;
+
         const retailCut = retailCutInput.value.trim();
         const species = speciesInput.value.trim();
         const primal = primalInput.value.trim();
@@ -47,7 +54,4 @@ document.addEventListener('DOMContentLoaded', function() {
             Primal: ${correctData.primal}`;
         }
     }
-
-    // Load the first random image on page load
-    loadRandomImage();
 });
