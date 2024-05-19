@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const primalInput = document.getElementById('primal-name');
 
     // CSVファイルの読み込みと解析
-    Papa.parse('temp.csv', {
+    Papa.parse('./retailIndex.csv', {
         download: true,
         header: true,
         complete: function(results) {
