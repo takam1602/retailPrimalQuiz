@@ -13,8 +13,12 @@ document.addEventListener('DOMContentLoaded', function() {
         download: true,
         header: true,
         complete: function(results) {
+            console.log("CSV読み込み完了:", results); // デバッグメッセージ
             images = results.data;
             loadRandomImage();
+        },
+        error: function(error) {
+            console.error("CSV読み込みエラー:", error); // エラーメッセージ
         }
     });
 
@@ -27,10 +31,13 @@ document.addEventListener('DOMContentLoaded', function() {
         if (images.length > 0) {
             currentImageIndex = Math.floor(Math.random() * images.length);
             meatImage.src = images[currentImageIndex].src;
+            console.log("表示する画像:", images[currentImageIndex].src); // デバッグメッセージ
             resultDiv.textContent = '';
             retailCutInput.value = '';
             speciesInput.value = '';
             primalInput.value = '';
+        } else {
+            console.error("画像データがありません"); // エラーメッセージ
         }
     }
 
