@@ -6,9 +6,9 @@ src,retailCut,species,primal
 ./img/b_rumpsteak3.jpg,Rump Steak,Beef,Rump
 ./img/b_rumpsteak5.jpg,Rump Steak,Beef,Rump
 ./img/b_rumpsteak6.jpg,Rump Steak,Beef,Rump
-./img/b_shinbeefbonein.jpg,Rump Steak,Beef,Rump
-./img/b_shinbeefboneless2.jpg,Rump Steak,Beef,Rump
-./img/b_shinbeefboneless.jpg,Rump Steak,Beef,Rump
+./img/b_shinbeefbonein.jpg,Shin Beef bone in,Beef,Shin
+./img/b_shinbeefboneless2.jpg,Shin Beef boneless,Beef,Shin
+./img/b_shinbeefboneless.jpg ,Shin Beef boneless,Beef,Shin
 ./img/b_silversidesteak.jpg,Silver Side Steak,Beef,Silverside
 ./img/b_sirloinsteakboneless2.jpg,Sirloin Steak boneless,Beef,Striploin
 ./img/b_sirloinsteakboneless3.jpg,Sirloin Steak boneless,Beef,Striploin

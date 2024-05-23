@@ -14,20 +14,20 @@ document.addEventListener('DOMContentLoaded', function() {
         header: true,
         skipEmptyLines: true,
         complete: function(results) {
-            console.log("CSV読み込み完了:", results); 
+            console.log("CSV読み込み完了:", results);
             if (results.errors.length > 0) {
-                console.error("CSVパースエラー:", results.errors); 
+                console.error("CSVパースエラー:", results.errors);
                 results.errors.forEach(error => {
                     console.error("エラーの詳細:", error);
                 });
                 return;
             }
             images = results.data;
-            console.log("パースされたデータ:", images); 
+            console.log("パースされたデータ:", images);
             loadRandomImage();
         },
         error: function(error) {
-            console.error("CSV読み込みエラー:", error); 
+            console.error("CSV読み込みエラー:", error);
         }
     });
 
@@ -40,11 +40,11 @@ document.addEventListener('DOMContentLoaded', function() {
         if (images.length > 0) {
             currentImageIndex = Math.floor(Math.random() * images.length);
             const selectedImage = images[currentImageIndex];
-            console.log("選択された画像データ:", selectedImage); 
+            console.log("選択された画像データ:", selectedImage);
             if (selectedImage && selectedImage.src) {
                 meatImage.src = selectedImage.src;
             } else {
-                console.error("画像データが不正です:", selectedImage); 
+                console.error("画像データが不正です:", selectedImage);
                 meatImage.src = "";
             }
             resultDiv.textContent = '';
@@ -55,35 +55,33 @@ document.addEventListener('DOMContentLoaded', function() {
             console.error("画像データがありません");
         }
     }
+
     function normalizeInput(input) {
-    return input.trim().toLowerCase().replace(/[\s\u3000]+/g, ' ');
+        return input.trim().toLowerCase().replace(/[\s\u3000]+/g, ' ');
     }
 
     function checkAnswer() {
-    if (currentImageIndex === -1) return;
+        if (currentImageIndex === -1) return;
 
-    const retailCut = normalizeInput(retailCutInput.value);
-    const species = normalizeInput(speciesInput.value);
-    const primal = normalizeInput(primalInput.value);
+        const retailCut = normalizeInput(retailCutInput.value);
+        const species = normalizeInput(speciesInput.value);
+        const primal = normalizeInput(primalInput.value);
 
-    const correctData = images[currentImageIndex];
+        const correctData = images[currentImageIndex];
 
-    const correctRetailCut = normalizeInput(correctData.retailCut);
-    const correctSpecies = normalizeInput(correctData.species);
-    const correctPrimal = normalizeInput(correctData.primal);
+        const correctRetailCut = normalizeInput(correctData.retailCut);
+        const correctSpecies = normalizeInput(correctData.species);
+        const correctPrimal = normalizeInput(correctData.primal);
 
-    if (retailCut === correctRetailCut &&
-        species === correctSpecies &&
-        primal === correctPrimal) {
-        resultDiv.textContent = 'Correct!';
-    } else {
-        resultDiv.innerHTML = `Incorrect. The correct answers are:<br>
-
-        Retail Cut: ${correctData.retailCut}<br>
-
-        Species: ${correctData.species}<br>
-
-        Primal: ${correctData.primal}`;
-    }
+        if (retailCut === correctRetailCut &&
+            species === correctSpecies &&
+            primal === correctPrimal) {
+            resultDiv.textContent = 'Correct!';
+        } else {
+            resultDiv.innerHTML = `Incorrect. The correct answers are:<br>
+            Retail Cut: ${correctData.retailCut}<br>
+            Species: ${correctData.species}<br>
+            Primal: ${correctData.primal}`;
+        }
     }   
 });
