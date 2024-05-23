@@ -1,39 +1,39 @@
-src,retailCut,species,primal
-./img/b_rumpsteak7.jpg,Rump Steak,Beef,Rump
-./img/b_rumpsteak8.jpg,Rump Steak,Beef,Rump
-./img/b_rumpsteak.jpg,Rump Steak,Beef,Rump
-./img/b_shinbeefbonein.jpg,,Beef,
-./img/b_shinbeefboneless2.jpg,,Beef,
-./img/b_shinbeefboneless.jpg,,Beef,
-./img/b_silversidesteak.jpg,,Beef,
-./img/b_sirloinsteakboneless2.jpg,,Beef,
-./img/b_sirloinsteakboneless3.jpg,,Beef,
-./img/b_sirloinsteakboneless4.jpg,,Beef,
-./img/b_sirloinsteakboneless5.jpg,,Beef,
-./img/b_sirloinsteakboneless6.jpg,,Beef,
-./img/b_striploinsteakbonein.jpg,,Beef,
-./img/b_tbonesteak2.jpg,,Beef,
-./img/b_tbonesteak3.jpg,,Beef,
-./img/b_tbonesteak4.jpg,,Beef,
-./img/b_tbonesteak.jpg,,Beef,
-./img/b_topsidesteak2.jpg,,Beef,
-./img/b_topsidesteak.jpg,,Beef,
-./img/b_bladesteakbonein.jpg,,Beef,
-./img/b_bladesteakboneless.jpg,,Beef,
-./img/b_chucksteak2.jpg,,Beef,
-./img/b_chucksteak3.jpg,,Beef,
-./img/b_chucksteak.jpg,,Beef,
-./img/b_filletsteak2.jpg,,Beef,
-./img/b_filletsteak3.jpg,,Beef,
-./img/b_oysterbladesteak2.jpg,,Beef,
-./img/b_oysterbladesteak.jpg,,Beef,
-./img/b_ribeyesteak2.jpg,,Beef,
-./img/b_ribeyesteak3.jpg,,Beef,
-./img/b_ribeyesteak.jpg,,Beef,
-./img/b_ribsteakbonein.jpg,,Beef,
-./img/b_roundsteak2.jpg,,Beef,
-./img/b_roundsteak.jpg,,Beef,
-./img/b_rump2.jpg,,Beef,
-./img/b_rumpsteak3.jpg,,Beef,
-./img/b_rumpsteak5.jpg,,Beef,
-./img/b_rumpsteak6.jpg,,Beef,
+src,                               retailCut,              species, primal
+./img/b_rumpsteak7.jpg,            Rump Steak,             Beef,    Rump
+./img/b_rumpsteak8.jpg,            Rump Steak,             Beef,    Rump
+./img/b_rumpsteak.jpg,             Rump Steak,             Beef,    Rump
+./img/b_rump2.jpg,                 Rump Steak,             Beef,    Rump
+./img/b_rumpsteak3.jpg,            Rump Steak,             Beef,    Rump
+./img/b_rumpsteak5.jpg,            Rump Steak,             Beef,    Rump
+./img/b_rumpsteak6.jpg,            Rump Steak,             Beef,    Rump
+./img/b_shinbeefbonein.jpg,        Rump Steak,             Beef,    Rump
+./img/b_shinbeefboneless2.jpg,     Rump Steak,             Beef,    Rump
+./img/b_shinbeefboneless.jpg,      Rump Steak,             Beef,    Rump
+./img/b_silversidesteak.jpg,       SilverSide Steak,       Beef,Silverside
+./img/b_sirloinsteakboneless2.jpg, Sirloin Steak boneless, Beef,Striploin
+./img/b_sirloinsteakboneless3.jpg, Sirloin Steak boneless, Beef,Striploin
+./img/b_sirloinsteakboneless4.jpg, Sirloin Steak boneless, Beef,Striploin
+./img/b_sirloinsteakboneless5.jpg, Sirloin Steak boneless, Beef,Striploin
+./img/b_sirloinsteakboneless6.jpg, Sirloin Steak boneless, Beef,Striploin
+./img/b_striploinsteakbonein.jpg,  Sirloin Steak bone in,  Beef,Shortloin
+./img/b_tbonesteak2.jpg,           T bone Steak,           Beef,Shortloin
+./img/b_tbonesteak3.jpg,           T bone Steak,           Beef,Shortloin
+./img/b_tbonesteak4.jpg,           T bone Steak,           Beef,Shortloin
+./img/b_tbonesteak.jpg,            T bone Steak,           Beef,Shortloin
+./img/b_topsidesteak2.jpg,         Topside Steak,          Beef,Topside
+./img/b_topsidesteak.jpg,          Topside Steak,          Beef,Topside
+./img/b_bladesteakbonein.jpg,      Blade Steak bone in,    Beef,Blade
+./img/b_bladesteakboneless.jpg,    Blade Steak boneless,   Beef,Blade
+./img/b_chucksteak2.jpg,           Chuck Steak,            Beef,Chuck
+./img/b_chucksteak3.jpg,           Chuck Steak,            Beef,Chuck
+./img/b_chucksteak.jpg,            Chuck Steak,            Beef,Chuck
+./img/b_filletsteak2.jpg,          Fillet Steak,           Beef,Tenderloin
+./img/b_filletsteak3.jpg,          Fillet Steak,           Beef,Tenderloin
+./img/b_oysterbladesteak2.jpg,     Oyster Blade Steak,     Beef,Oyster Blade
+./img/b_oysterbladesteak.jpg,      Oyster Blade Steak,     Beef,Oyster Blade
+./img/b_ribeyesteak2.jpg,          Rib Eye Steak,          Beef,Cube Roll
+./img/b_ribeyesteak3.jpg,          Rib Eye Steak,          Beef,Cube Roll
+./img/b_ribeyesteak.jpg,           Rib Eye Steak,          Beef,Cube Roll
+./img/b_ribsteakbonein.jpg,        Rib Steak bone in,      Beef,Rib set
+./img/b_roundsteak2.jpg,           Round Steak,            Beef,Knuckle
+./img/b_roundsteak.jpg,            Round Steak,            Beef,Knuckle
