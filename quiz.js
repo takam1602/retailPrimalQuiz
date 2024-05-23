@@ -77,9 +77,12 @@ document.addEventListener('DOMContentLoaded', function() {
         primal === correctPrimal) {
         resultDiv.textContent = 'Correct!';
     } else {
-        resultDiv.textContent = `Incorrect. The correct answers are:\n
-        Retail Cut: ${correctData.retailCut}\n
-        Species: ${correctData.species}\n
+        resultDiv.innerHTML = `Incorrect. The correct answers are:<br>
+
+        Retail Cut: ${correctData.retailCut}<br>
+
+        Species: ${correctData.species}<br>
+
         Primal: ${correctData.primal}`;
     }
     }   
