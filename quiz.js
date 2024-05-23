@@ -55,33 +55,32 @@ document.addEventListener('DOMContentLoaded', function() {
             console.error("画像データがありません");
         }
     }
-    
     function normalizeInput(input) {
-        return input.trim().toLowerCase().replace(/\s+/g, ' ');
+    return input.trim().toLowerCase().replace(/[\s\u3000]+/g, ' ');
     }
-    
+
     function checkAnswer() {
-        if (currentImageIndex === -1) return;
-    
-        const retailCut = normalizeInput(retailCutInput.value);
-        const species = normalizeInput(speciesInput.value);
-        const primal = normalizeInput(primalInput.value);
-    
-        const correctData = images[currentImageIndex];
-    
-        const correctRetailCut = normalizeInput(correctData.retailCut);
-        const correctSpecies = normalizeInput(correctData.species);
-        const correctPrimal = normalizeInput(correctData.primal);
-    
-        if (retailCut === correctRetailCut &&
-            species === correctSpecies &&
-            primal === correctPrimal) {
-            resultDiv.textContent = 'Correct!';
-        } else {
-            resultDiv.textContent = `Incorrect. The correct answers are:\n
-            Retail Cut: ${correctData.retailCut}\n
-            Species: ${correctData.species}\n
-            Primal: ${correctData.primal}`;
-        }
+    if (currentImageIndex === -1) return;
+
+    const retailCut = normalizeInput(retailCutInput.value);
+    const species = normalizeInput(speciesInput.value);
+    const primal = normalizeInput(primalInput.value);
+
+    const correctData = images[currentImageIndex];
+
+    const correctRetailCut = normalizeInput(correctData.retailCut);
+    const correctSpecies = normalizeInput(correctData.species);
+    const correctPrimal = normalizeInput(correctData.primal);
+
+    if (retailCut === correctRetailCut &&
+        species === correctSpecies &&
+        primal === correctPrimal) {
+        resultDiv.textContent = 'Correct!';
+    } else {
+        resultDiv.textContent = `Incorrect. The correct answers are:\n
+        Retail Cut: ${correctData.retailCut}\n
+        Species: ${correctData.species}\n
+        Primal: ${correctData.primal}`;
     }
+    }   
 });
