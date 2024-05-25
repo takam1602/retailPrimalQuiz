@@ -36,4 +36,64 @@ src,retailCut,species,primal
 ./img/b_ribeyesteak.jpg,Rib Eye Steak,Beef,CubeRoll
 ./img/b_ribsteakbonein.jpg,Rib Steak bone in,Beef,Ribset
 ./img/b_roundsteak2.jpg,Round Steak,Beef,Knuckle
-/img/b_roundsteak.jpg,Round Steak,Beef,Knuckle
+./img/b_roundsteak.jpg,Round Steak,Beef,Knuckle
+./img/oysterBladesteak.png,Oyster Blade Steak,Beef,Oyster Blade
+./img/ribeyesteakbonein.png,Ribeye steak,beef,cube roll
+./img/ribeyeSteak.png,ribeye steak, beef,cube roll
+./img/rumpCapSteak.png,rump cap steak,beef rump cap
+./img/rumpSteak.png,rump steak,beef,rump
+./img/shinbeefbonein.png,shin beef bone in ,beef,shin
+./img/shinbeefboneless.png,shin beef boneless,beef shin
+./img/silversideSteak.png,silverside steak,beef,shin
+./img/sirloinSteakBonein.png,sirloin steak bone in,beef,Shortloin
+./img/sirloinsteakboneless.png,sirloin steak boneless,beef,strip loin
+./img/t-bonesteak.png,T-bone steak, beef, shortloin
+./img/topsideSteak.png,topside steak,beef, topside
+./img/shortRibs.png,short ribs, beef, borequarter
+./img/roundSteak.png,round steak,beef, knuckle
+./img/bladesteakBonein.png      ,blade steak bone in ,beef, blade
+./img/bladesteakboneless.png    ,blade steak boneless,beef,blade
+./img/chuckSteak.png            ,chuck steak, beef, chuck
+./img/flankSteak.png            ,flank steak,beef flank
+./img/flatironSteak.png         ,flat iron steak, oyster blade
+./img/filletSteak.png           ,fillet steak, beef, tenderloin
+./img/ribloinCutlet.png,Rib loin cutlet, lamb, rib loin
+./img/lamb_rumpSteak.png ,rump steak,lamb,Leg         
+./img/lamb_rumpSteak2.png,rump steak,lamb,Leg
+./img/lamb_rumpSteak3.png,rump steak,lamb,Leg        '
+./img/lamb_rumpSteak4.png,rump steak,lamb,Leg         
+./img/lamb_shank.png,shank,lamb,leg      
+./img/lamb_tenderLoin.png,tenderloin,lamb,tenderloin
+./img/lamb_topsideroast.png,topside roast,lamb Leg
+./img/lamb_topsideSteak.png,topside steak,lamb,Leg       
+./img/legChop.png                 ,Leg chop, lamb,leg
+./img/midloinChop.png             ,mid loin chop,lamb,Loin
+./img/lamb_frenchedRack.png     ,Frenched rack, lamb,rib loin
+./img/lamb_legRoast.png         ,Leg roast,lamb,leg
+./img/lamb_neckChop.png         ,neck chop, lamb,neck
+./img/lamb_rack.png             ,rack,lamb,rib loin
+./img/lamb_ribs_portioned.png   ,ribs, lamb, forequarter
+./img/lamb_ribs_whole.png       ,ribs, lamb,forequarter
+./img/lamb_roundSteak.png       ,round steak, lamb,leg
+./img/lamb_rumpRoaset.png       ,roump roast,lamb,leg
+./img/lamb_rumpsteak_1.png      ,rump steak,lamb,leg
+./img/butterflySteak.png        ,butterfly steak,lamb,eye of loin
+./img/chumpChop.png             ,chump chop, lamb,chump
+./img/bestneckchop.png          ,best neck chop,lamb,neck
+./img/eyeofLoin.png             , eye of loin, lamb,loin
+./img/forequarterChop.png       ,forequarter chop,lamb,forequarter
+./img/roundRoast.png,round roast, lamb,Leg
+./img/scotchFilletSteak.png,scotch fillet steak, pork,collar butt
+./img/pork_loinSteak.png,loin steak,pork, loin
+./img/pork_rolledloin roast.png,rolled loin roast,pork,forequarter
+./img/pork_rolledShoulderRoast.png,rolld shoulder roast, forequarter
+./img/pork_spareRibs.png,spare ribs, pork,belly
+./img/pork_americanRibs.png       ,american ribs, pork,forequarter
+./img/pork_belly.png              ,belly,pork,belly
+./img/pork_butterflySteak.png     ,butterfly steak,pork, loin
+./img/pork_fillet.png             ,fillet, pork, tenderloin
+./img/pork_forequaerterChop.png   ,forequarter chop, pork, forequarter
+./img/pork_forequarterChop2.png   ,forequarter chop, pork, forequarter
+./img/pork_legRoast.png           ,leg roast, pork,leg
+./img/pork_loinChop.png           ,loin chop, pork loin
+./img/pork_loinCutlet.png         ,loin cutlet, pork loin
