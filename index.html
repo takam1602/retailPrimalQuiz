@@ -5,44 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meat Cut Quiz</title>
     <style>
-        #quiz-container {
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        .links {
+            margin-top: 20px;
             text-align: center;
         }
-        #image-container img {
-            max-width: 100%;
-            height: auto;
+        .links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #007bff;
         }
-        .result-table {
-            display: inline-block;
-            text-align: left;
-            margin-top: 20px;
-        }
-        .result-table th, .result-table td {
-            padding: 5px 10px;
-        }
-        .result-table th {
-            text-align: right;
+        .links a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <div id="quiz-container">
-        <div id="image-container">
-            <img id="meat-image" src="" alt="Meat Cut">
+    <div class="content">
+        <h1>Meat Cut Quiz</h1>
+        <p>Welcome to the Meat Cut Quiz! This application is designed to help you learn and identify different cuts of meat. You can choose between two types of quizzes:</p>
+        <ul>
+            <li><strong>Retail Quiz:</strong> Identify the retail cut names.</li>
+            <li><strong>Primal Quiz:</strong> Identify the primal cuts.</li>
+        </ul>
+        <p>Please make sure to enter your answers accurately. The quizzes will check your answers for case insensitivity and handle different types of spaces (full-width and half-width).</p>
+        <div class="links">
+            <a href="retailquiz.html">Retail Quiz</a>
+            <a href="primalquiz.html">Primal Quiz</a>
         </div>
-        <form id="quiz-form">
-            <label for="retail-cut-name">Retail Cut Name:</label>
-            <input type="text" id="retail-cut-name" name="retail-cut-name" required><br>
-            <label for="species">Species:</label>
-            <input type="text" id="species" name="species" required><br>
-            <label for="primal-name">Primal Name:</label>
-            <input type="text" id="primal-name" name="primal-name" required><br>
-            <button type="button" id="answer-btn">Answer</button>
-        </form>
-        <button id="next-btn">Next</button>
-        <div id="result"></div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
-    <script src="quiz.js"></script>
 </body>
 </html>
