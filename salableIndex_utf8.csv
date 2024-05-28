@@ -1,0 +1,73 @@
+src,region,salableItem,primal
+./salableImg/b_blade2.jpg,Forequarter,Blade,Blade            
+./salableImg/b_blade.jpg ,Forequarter,Blade,Blade            
+./salableImg/b_bolarblade2.jpg,Forequarter,Bolar Blade,Blade       
+./salableImg/b_bolarblade.jpg ,Forequarter,Bolar Blade,Blade       
+./salableImg/b_brisket.jpg ,Forequarter,brisket         ,Brisket 
+./salableImg/b_brisketnavelend.jpg   ,forequarter,navel end brisket,brisket
+./salableImg/b_brisketpointend2.jpg  ,forequarter,point end brisket,brisket
+./salableImg/b_brisketpointend.jpg  ,forequarter,point end brisket ,brisket
+./salableImg/b_chuckroll2.jpg       ,forequarter,chuck roll,chuck 
+./salableImg/b_chuckroll.jpg        ,forequarter,chuck roll,chuck 
+./salableImg/b_chucktender2.jpg     ,forequarter,chucktender,chuck
+./salableImg/b_chucktender.jpg      ,forequarter,chucktender,chuck
+./salableImg/b_cuberoll2.jpg        ,forequarter,cube roll ,chuck
+./salableImg/b_cuberoll3.jpg        ,forequarter,cube roll ,chuck
+./salableImg/b_cuberoll4.jpg        ,forequarter,cube roll ,chuck
+./salableImg/b_cuberoll.jpg         ,forequarter,cube roll ,chuck
+./salableImg/b_dsc0320.jpg       n/a,,n/a    ,
+./salableImg/b_dsc_0323.jpg      n/a,,n/a    ,
+./salableImg/b_dsc0325.jpg       n/a,,n/a    ,
+./salableImg/b_dsc_0331.jpg      n/a,,n/a    ,
+./salableImg/b_dsc_0333.jpg      n/a,,n/a    ,
+./salableImg/b_dsc_9833.jpg      n/a,,n/a    ,
+./salableImg/b_dsc_9835.jpg      n/a,,n/a    ,
+./salableImg/b_dsc_9838.jpg      n/a,,n/a   ,
+./salableImg/b_dsc_9906.jpg      n/a,,,
+./salableImg/b_dsc_9907.jpg      n/a,,,
+./salableImg/b_dsc_9910.jpg      n/a,,,
+./salableImg/b_dsc_9911.jpg      n/a,,,
+./salableImg/b_dsc_9914.jpg      n/a,,,
+./salableImg/b_dsc_9918.jpg      n/a,,,
+./salableImg/b_dsc_9919.jpg      n/a,,,
+./salableImg/b_dsc_9921.jpg      n/a,,,
+./salableImg/b_dsc_9922.jpg      n/a,,,
+./salableImg/b_dsc_9923.jpg      n/a,,,
+./salableImg/b_dsc_9926.jpg      n/a,,,
+./salableImg/b_dsc_9931.jpg      n/a,,,
+./salableImg/b_dsc_9932.jpg      n/a,,,
+./salableImg/b_dsc_9936.jpg      n/a,,,
+./salableImg/b_eyeround2.jpg     ,Butt,Eye round,outside
+./salableImg/b_eyeround.jpg      ,Butt,Eye round,outside
+./salableImg/b_knuckle3.jpg      ,Butt, Knuckle,thick flank
+./salableImg/b_knuckle4.jpg      ,Butt, Knuckle,thick flank
+./salableImg/b_knuckle5.jpg      ,Butt, Knuckle,thick flank
+./salableImg/b_knuckle.jpg       ,Butt, Knuckle,thick flank
+./salableImg/b_thickflank.jpg,Butt,thick flank,thickflank
+./salableImg/b_outside.jpg,Butt,outside,Silverside 
+./salableImg/b_outside2.jpg,Butt,outside,Silverside      
+./salableImg/b_outside3.jpg,Butt,outside,Silverside      
+./salableImg/b_outside4.jpg,Butt,outside,Silverside      
+./salableImg/b_outsideflat2.jpg,butt,outside flat,outside  
+./salableImg/b_outsideflat3.jpg,butt,outside flat,outside
+./salableImg/b_outsideflat.jpg,butt,outside flat,outside
+./salableImg/b_oysterblade2.jpg,forequarter,oyster blade,blade
+./salableImg/b_oysterblade3.jpg,forequarter,oyster blade,blade
+ ./salableImg/b_oysterblade.jpg,forequarter,oyster blade,blade
+./salableImg/b_rump2.jpg,Butt,rump,rump
+./salableImg/b_rump3.jpg,Butt,rump,rump
+ ./salableImg/b_rump.jpg,Butt,rump,rump
+./salableImg/b_shinshank.jpg,Butt or forequarter,shin-shank,shin-shank
+./salableImg/b_shortloin2.jpg,loin,shortloin,shortloin
+./salableImg/b_shortloin3.jpg,loin,shortloin,shortloin
+./salableImg/b_shortloin4.jpg,loin,shortloin,shortloin
+ ./salableImg/b_shortloin.jpg,loin,shortloin,shortloin
+./salableImg/b_silverside.jpg,Butt,silverside,silverside
+./salableImg/b_striploin2.jpg,Loin,Striploin,shortloin
+ ./salableImg/b_striploin.jpg,Loin,Striploin,shortloin
+./salableImg/b_tenderloin2.jpg,loin,tenderloin,tenderloin
+ ./salableImg/b_tenderloin.jpg,loin,tenderloin,tenderloin
+./salableImg/b_topside2.jpg,Butt,topside,topside
+./salableImg/b_topside3.jpg,Butt,topside,topside
+ ./salableImg/b_topside.jpg,Butt,topside,topside
+./salableImg/chucktender2.jpg,Forequarter,chuck tender,Blade
