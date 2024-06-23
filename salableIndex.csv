@@ -15,28 +15,6 @@ src,region,salableItem,primal
 ./salableImg/b_cuberoll3.jpg        ,forequarter,cube roll ,chuck
 ./salableImg/b_cuberoll4.jpg        ,forequarter,cube roll ,chuck
 ./salableImg/b_cuberoll.jpg         ,forequarter,cube roll ,chuck
-./salableImg/b_dsc0320.jpg       n/a,n/a,n/a    
-./salableImg/b_dsc_0323.jpg      n/a,n/a,n/a    
-./salableImg/b_dsc0325.jpg       n/a,n/a,n/a    
-./salableImg/b_dsc_0331.jpg      n/a,n/a,n/a    
-./salableImg/b_dsc_0333.jpg      n/a,n/a,n/a    
-./salableImg/b_dsc_9833.jpg      n/a,n/a,n/a    
-./salableImg/b_dsc_9835.jpg      n/a,n/a,n/a    
-./salableImg/b_dsc_9838.jpg      n/a,n/a,n/a   
-./salableImg/b_dsc_9906.jpg      n/a,n/a,n/a
-./salableImg/b_dsc_9907.jpg      n/a,n/a,n/a
-./salableImg/b_dsc_9910.jpg      n/a,n/a,n/a
-./salableImg/b_dsc_9911.jpg      n/a,n/a,n/a
-./salableImg/b_dsc_9914.jpg      n/a,n/a,n/a
-./salableImg/b_dsc_9918.jpg      n/a,n/a,n/a
-./salableImg/b_dsc_9919.jpg      n/a,n/a,n/a
-./salableImg/b_dsc_9921.jpg      n/a,n/a,n/a
-./salableImg/b_dsc_9922.jpg      n/a,n/a,n/a
-./salableImg/b_dsc_9923.jpg      n/a,n/a,n/a
-./salableImg/b_dsc_9926.jpg      n/a,n/a,n/a
-./salableImg/b_dsc_9931.jpg      n/a,n/a,n/a
-./salableImg/b_dsc_9932.jpg      n/a,n/a,n/a
-./salableImg/b_dsc_9936.jpg      n/a,n/a,n/a
 ./salableImg/b_eyeround2.jpg     ,Butt,Eye round,outside
 ./salableImg/b_eyeround.jpg      ,Butt,Eye round,outside
 ./salableImg/b_knuckle3.jpg      ,Butt, Knuckle,thick flank
@@ -71,3 +49,59 @@ src,region,salableItem,primal
 ./salableImg/b_topside3.jpg,Butt,topside,topside
  ./salableImg/b_topside.jpg,Butt,topside,topside
 ./salableImg/chucktender2.jpg,Forequarter,chuck tender,Blade
+
+./salableImg/b_chuckRoll_dsc2.jpg,forequarter,chuck roll,Chuck
+./salableImg/b_cubeRoll_dsc3.jpg,Forequarter,cube roll,cube roll
+./salableImg/b_eyeRound_dsc.jpg,Butt,eye round,Outside
+./salableImg/b_knuckle_dsc.jpg,Butt,knuckle,thick flank
+./salableImg/b_pointendBrisket_dsc2.jpg,forequarter,point end brisket,Brisket
+./salableImg/b_pointendBrisket_dsc.jpg,forequarter,point end brisket,Brisket
+./salableImg/b_rump_dsc.jpg,Butt, rump,Rump
+./salableImg/b_shortLoin_dsc.jpg,loin,shortloin,shortloin
+./salableImg/b_chuckRoll_dsc.jpg,forequarter,chuck roll,chuck
+./salableImg/b_cubeRoll_dsc.jpg   ,forequarter,cube roll,cube roll
+./salableImg/b_knuckle_dsc2.jpg,butt,knuckle,thick flank
+./salableImg/b_navelendBrisket_dsc2.jpg,forequarter,navel end brisket,brisket
+./salableImg/b_pointendBrisket_dsc3.jpg ,forequarter,point end brisket,brisket
+./salableImg/b_rump_dsc2.jpg  ,butt,rump,rump
+./salableImg/b_shortLoin_dsc2.jpg,loin,shortloin, shortloin
+./salableImg/b_cubeRoll_dsc2.jpg  ,forequarter,cube roll , cube roll
+./salableImg/b_eyeround_dsc2.jpg ,butt, eyeround ,outside
+./salableImg/b_knuckle_dsc3.jpg ,butt,knuckle,thick flank
+./salableImg/b_navelendBrisket_dsc.jpg ,forequarter,navel end brisket, brisket
+./salableImg/b_pointendBrisket_dsc4.jpg ,forequarter,point end brisket,brisket
+./salableImg/b_rump_dsc3.jpg   ,butt,rump,rump
+./salableImg/b_shortloin_dsc3.jpg,loin,shortloin, shortloin
+./salableImg/higashi2019_beef_blade.jpg,forequarter,blade,blade
+./salableImg/higashi2019_beef_bolarblade.jpg,forequarter, bolar blade, flade
+./salableImg/higashi2019_beef_chuckroll.jpg,forequarter,chuck roll, chuck
+./salableImg/higashi2019_beef_cuberoll.jpg, forequarter,cube roll, cuve roll
+./salableImg/higashi2019_beef_eyeround.jpg,butt, eye round, outside
+./salableImg/higashi2019_beef_flapmeat.jpg,flank, flap meat, Internal flank plate
+./salableImg/higashi2019_beef_heelmuscle.jpg,butt, heel muscle,silverside
+./salableImg/higashi2019_beef_nabelendbrisket.jpg,forequarter,navel end brisket,brisket
+./salableImg/higashi2019_beef_outsideflat.jpg,butt, outside flat,outside
+./salableImg/higashi2019_beef_outside.jpg,butt, outside,silverside
+./salableImg/higashi2019_beef_oysterblade.jpg,forequarter,oyster blade,blade
+./salableImg/higashi2019_beef_pointendbrisket.jpg,forequarter,point end brisket
+./salableImg/higashi2019_beef_rumpcap.jpg,butt, rump cap, rump
+./salableImg/higashi2019_beef_rump.jpg,butt, rump, rump
+./salableImg/higashi2019_beef_shinshank.jpg,butt or forequarter, shin-shank,shin-shank
+./salableImg/higashi2019_beef_striploin.jpg,loin striploin,shortloin
+./salableImg/higashi2019_beef_tenderloin.jpg,loin,tenderloin, tenderloin
+./salableImg/higashi2019_beef_thickflank.jpg,butt,thick flank, thick flank
+./salableImg/higashi2019_beef_thickskirt.jpg,Offal,thick skirt,Abdonominal cavity
+./salableImg/higashi2019_beef_thinskirt.jpg,offal,thin skirt,abdominal cavity
+./salableImg/higashi2019_beef_tongue.jpg,offal,tongue,head
+./salableImg/higashi2019_beef_topsidecapoff.jpg,butt,topside cap-off,topside
+./salableImg/higashi2019_beef_tritip.jpg,butt,tri tip, rump
+./salableImg/higashi2024_beef_bolarblade.jpg,forequarter,bolar blade,blade
+./salableImg/higashi2024_beef_bolarblade.png,forequarter,bolar blade,blade
+./salableImg/higashi2024_beef_chuckeroll.png,forequarter,chuck roll,chuck
+./salableImg/higashi2024_beef_flanksteak.png,flank,flank steak,thin flank
+./salableImg/higashi2024_beef_flapmeat2.png,flank,flap meat,internal flank plate
+./salableImg/higashi2024_beef_navelendbrisket2.png,forequarter,navel end brisket,brisket
+./salableImg/higashi2024_beef_navelendbrisket.png,forequarter,navel end brisket,brisket
+./salableImg/higashi2024_beef_outisideflat.jpg,butt, outside flat, outside
+./salableImg/higashi2024_beef_topside.png,butt,topside, topside
+./salableImg/higashi2024_beef_rumpcap.png,butt,rump cap,rump
