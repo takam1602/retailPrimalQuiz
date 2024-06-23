@@ -9,11 +9,16 @@
             font-family: Arial, sans-serif;
             text-align: center;
             padding: 20px;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
         .content {
             max-width: 800px;
             margin: 0 auto;
             text-align: left;
+            flex-grow: 1;
         }
         .links {
             margin-top: 20px;
@@ -27,12 +32,25 @@
         .links a:hover {
             text-decoration: underline;
         }
+        footer {
+            background-color: #f1f1f1;
+            padding: 10px 0;
+            text-align: center;
+            width: 100%;
+        }
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
     <div class="content">
         <h1>Meat quiz</h1>
-        <p>Welcome to the Meat judge quiz!</br>
+        <p>Welcome to the Meat judge quiz!<br>
         このクイズはICMJオーストラリア大会のRetail cut Identification とSaleable items identificationの練習用です．画像は無断転用してしまっているので好ましくはないのですが,,, トレーニング専用で，SNSの投稿や動画配信への使用は控えていただきたく思います．</p>
         
         <h2>Retail/Salable quiz</h2>
@@ -44,15 +62,19 @@
         </div>
 
         <h1>Color quiz</h1>
-        <p>色が表示されますので，それを見て回答を入力します．回答はAusmeatのスコアを入力してください．入力し終えたらanswer ボタンを押して回答を確認します．正解していたらnext ボタンで次の画像へ，間違っていたら表示される答えと見比べて復習します．
+        <p>色が表示されますので，それを見て回答を入力します．回答はAusmeatのスコアを入力してください．入力し終えたらanswer ボタンを押して回答を確認します．正解していたらnext ボタンで次の画像へ，間違っていたら表示される答えと見比べて復習します．</p>
         <img src="./mcImg/meatColor.png" alt="Meat color" width="400">
         <img src="./fcImg/fatColor.png" alt="Fat color" width="400">
 
-        <div class = "links">
+        <div class="links">
             <a href="meatColorJudge.html">Meat Color</a>
             <a href="fatColorJudge.html">Fat Color</a>
         </div>
-
     </div>
+
+    <footer>
+        <p>Tatsuki Kamata @ NARO 2024</p>
+        <p><a href="https://github.com/takam1602/retailPrimalQuiz">takam1602/retailPrimalQuiz</a></p>
+    </footer>
 </body>
 </html>
