@@ -1,0 +1,176 @@
+﻿<?xml version= "1.0"?><ZoomSettings
+
+	imageLink1= "Beef_5_6_9_12_d.jpg"
+	imageLink2= "Beef_5_6_9_12_c.jpg"
+	imageLink3= "Beef_5_6_9_12_a.jpg"
+	imageLink4= "Beef_5_6_9_12_b.jpg"
+	imageLink5= "Eyemuscle_081_094_106_103.jpg"
+	imageSmoothing= "false"
+	
+	zoomMax= "400"
+	zoomOutToExtreme= "true"
+	zoomFactor= "5.0"	
+	panSpeed= "5.0"
+	panWithinBoundary="true"
+	ease= "3.5"
+	
+	usePanButtons= "true"
+	useDragOption= "true"
+	
+	controlBoxAutoHide = "false"
+	controlBoxAutoHideDelay = "2"
+	controlBoxVAlign= "bottom"
+	controlBoxHAlign= "right"
+	controlBoxSpace= "10"
+	controlBoxBgColor= "000000"
+	controlBoxBgTransparency= "60"
+	controlButtonColor= "FFFFFF"
+	controlButtonTransparency= "100"
+	controlButtonArrowColor= "000000"
+	
+	BackgroundColor= "FFFFFF"
+	BackgroundShadow= "true"
+	Border= "true"
+	BorderColor= "F2F2F2"
+	
+	initialZoomPercentage=""
+	initialHorizontalAlign=""
+	initialVerticalAlign=""
+	
+	Noofsteps = "5"
+	
+	Noq = "10"
+	
+	q1= "Place these carcases in order from 1st to 4th"
+	q1a= "3241"
+	q1ajs= "4-5-2"
+	q1ajc= ""
+	q2= "1. Which is the fattest, lowest yielding carcase?"
+	q2a= "4"
+	q3= "2. Which carcase shows the most seam fat?"
+	q3a= "4"
+	q4 = "3. Between 2 and 3 which carcase has the most marbling?" 
+	q4a = "3"
+	q5 = "4. Which carcase has the most desirable combination of quality and yield?" 
+	q5a = "3"
+	q6 = "5. Between 1 and 2 which carcase is the trimmest over the rib eye?" 
+	q6a = "1"
+	q7 = "6. Which carcase has the smallest rib eye?" 
+	q7a = "2"
+	q8 = "7. How many carcases are heifers?" 
+	q8a = "1"
+	q9 = "8. From their external fat colour how many carcase could have been grass fed?" 
+	q9a = "2"
+	q10 = "9. Between 1 and 2 which had the thickest heaviest muscled hind quarter?" 
+	q10a = "2"
+	q11 = "10. Which is the lowest yielding carcase?" 
+	q11a = "1"	
+	
+		
+/>
+
+<!----------------------Help-------------------------
+
+1. imageLink
+Enter the path to your image. You can add a full path like this
+"http://www.mywebsite.com/images/myimage.jpg"
+or just the relative path like this:
+"images/myimage.jpg"
+
+2.imageSmoothing
+This option keeps the image look smooth and avoid pixelation on all zoom levels. Note that smoothing may cause 
+poor performance in low configuration machines if the image is too large.
+
+3. zoomMax
+Maximum percentage of zoom allowed. (400 means the image can be enlarged to 4 times bigger than original size):
+Example values: "100", "150", "200", "400", "800" etc 
+
+4. zoomOutToExtreme
+How the image should display in the minimum zoom out condition. Two possible ways are
+true: Show the entire image to fit within window 
+false: Show the image to fit only one side (either height or width) and the otherside can be viwed by panning
+
+5. zoomFactor
+Speed and amount of zoom while clicking "+" and "-" buttons
+Example values: "1", "2", "3", or fractions "1.5", "10.4" etc
+
+6. panSpeed
+Speed of movement of image while clicking the Left, Right, Up, Down Arrow buttons
+Example values: "1", "2", "3", or fractions "1.5", "10.4" etc
+
+7. panWithinBoundary
+While dragging and panning whether we need to allow the content to amove anywhere or just within the canvas boundary
+Make it "false" if you need to move the content freely.
+
+8. ease
+Smoothness of movement and smothness of zoom
+Example values: "1", "2", "3", or fractions "1.5", "10.4" etc
+
+9. usePanButtons
+If you don't want the Left, Right, Up, Down Arrow buttons for pan option, (and just ok with drag option),
+then make this value into "false"
+
+10. useDragOption
+If you don't want the drag option, then make this value into "false"
+
+11. controlBoxAutoHide
+Show the control box only when the mouse presents within canvas area. Otherwise hide:
+
+12. controlBoxAutoHideDelay 
+Delay time in seconds to hide the control box 
+Example values: 1,2,3, or fractions 1.5, 10.4 etc
+
+13. controlBoxVAlign
+You can position the control buttons box. This option is for vertical alignment
+Example values: "top", "middle", "bottom"
+
+14. controlBoxHAlign
+This option is for horizontal alignment
+Example values: "left", "center", "right"
+
+15. controlBoxSpace
+Space betwen corner of flash stage and control box in pixels
+Example values: "1", "2", "3", "10", "20"...
+
+16. controlBoxBgColor
+Control box background color (value in hexadecimal)
+
+17. controlBoxBgTransparency
+Control box background transparency (in percentage)
+
+18. controlButtonColor
+Control box buttons color (value in hexadecimal)
+
+19. controlButtonTransparency
+Control buttons transparency (in percentage)
+
+20. controlButtonArrowColor
+Control buttons Arrow and symbols color (in hexadecimal)
+
+21. BackgroundColor
+Background color of the movie (in hexadecimal)
+
+22. BackgroundShadow
+A mild dark shadow visible in the outer area of flash to enhance the look. Set "false" to remove it.
+
+23. Border
+Specify whether border needed or not (true/false)
+
+24. BorderShadow
+Border color (in hexadecimal)
+
+25. initialZoomPercentage
+You can set a custom default zoom value in percentage. Also clicking the reset button will revert back to this value. leave the value blank "" if you don't want to use this option.
+Example values: "200", "100", "50"...
+
+26. initialHorizontalAlign
+If the initialZoomPercentage is set to some value and size of the image exceeds the canvas size, then we may need to align the image to show a particular initially.  This option can align the image either to "left" or "right". For center alignment, type "center" or just leave the value blank "".
+
+27. initialVerticalAlign
+If the initialZoomPercentage is set to some value and size of the image exceeds the canvas size, then we may need to align the image to show a particular initially.  This option can align the image either to "top" or "bottom". For center alignment, type "center" or just leave the value blank "".
+
+28. noq is the number of questions to be shown
+
+29. q* is the question
+
+------------------------End------------------------->
