@@ -82,17 +82,17 @@
             let fourDigitAnswer;
 
             function loadXML() {
-                fetch('carcassQuiz/class1/data_zoom.xml')
+                fetch('./carcassQuiz/class1/data_zoom.xml')
                     .then(response => response.text())
                     .then(data => {
                         const parser = new DOMParser();
                         const xmlDoc = parser.parseFromString(data, 'text/xml');
-                        images = Array.from(xmlDoc.querySelectorAll('ZoomSettings [id^=imageLink]')).map(node => node.textContent);
+                        images = Array.from(xmlDoc.querySelectorAll('ZoomSettings [imageLink]')).map(node => node.textContent);
                         for (let i = 1; i <= 10; i++) {
-                            questions.push(xmlDoc.querySelector(`ZoomSettings q${i}`).textContent);
-                            answers.push(xmlDoc.querySelector(`ZoomSettings q${i}a`).textContent);
+                            questions.push(xmlDoc.querySelector(`ZoomSettings [q${i}]`).textContent);
+                            answers.push(xmlDoc.querySelector(`ZoomSettings [q${i}a]`).textContent);
                         }
-                        fourDigitAnswer = xmlDoc.querySelector('ZoomSettings q1a').textContent;
+                        fourDigitAnswer = xmlDoc.querySelector('ZoomSettings [q1a]').textContent;
                         displayImage();
                     })
                     .catch(error => console.error('Error loading XML:', error));
@@ -100,7 +100,7 @@
 
             function displayImage() {
                 if (images.length > 0 && currentImageIndex < images.length) {
-                    quizImage.src = `./class1/${images[currentImageIndex]}`;
+                    quizImage.src = `./carcassQuiz/class1/${images[currentImageIndex]}`;
                 }
             }
 
