@@ -15,18 +15,6 @@
             margin: 0 auto;
             text-align: left;
         }
-        .links {
-            margin-top: 20px;
-            text-align: center;
-        }
-        .links a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: #007bff;
-        }
-        .links a:hover {
-            text-decoration: underline;
-        }
         .timer {
             font-size: 24px;
             margin: 20px 0;
@@ -43,7 +31,7 @@
 <body>
     <div class="content">
         <h2>New Game</h2>
-        <div class="timer" id="timer">00:00</div>
+        <div class="timer" id="timer">05:00</div>
         <button id="start-btn">Start</button>
         <div class="image-container" id="image-container">
             <button id="prev-btn">Previous</button>
@@ -52,7 +40,7 @@
         </div>
         <div class="question-container" id="question-container"></div>
         <div class="answer-container" id="answer-container"></div>
-        <button id="answer-btn">Answer</button>
+        <button id="answer-btn" style="display:none;">Answer</button>
         <button id="clear-btn">Clear</button>
     </div>
 
@@ -82,17 +70,24 @@
             let fourDigitAnswer;
 
             function loadXML() {
-                fetch('./carcassQuiz/class1/data_zoom.xml')
+                fetch('./class1/data_zoom.xml')
                     .then(response => response.text())
                     .then(data => {
                         const parser = new DOMParser();
-                        const xmlDoc = parser.parseFromString(data, 'text/xml');
-                        images = Array.from(xmlDoc.querySelectorAll('ZoomSettings [imageLink]')).map(node => node.textContent);
-                        for (let i = 1; i <= 10; i++) {
-                            questions.push(xmlDoc.querySelector(`ZoomSettings [q${i}]`).textContent);
-                            answers.push(xmlDoc.querySelector(`ZoomSettings [q${i}a]`).textContent);
+                        const xmlDoc = parser.parseFromString(data, 'application/xml');
+                        for (let i = 1; i <= 5; i++) {
+                            const imageLink = xmlDoc.querySelector(`ZoomSettings`).getAttribute(`imageLink${i}`);
+                            if (imageLink) images.push(imageLink);
                         }
-                        fourDigitAnswer = xmlDoc.querySelector('ZoomSettings [q1a]').textContent;
+                        for (let i = 1; i <= 10; i++) {
+                            const question = xmlDoc.querySelector(`ZoomSettings`).getAttribute(`q${i}`);
+                            const answer = xmlDoc.querySelector(`ZoomSettings`).getAttribute(`q${i}a`);
+                            if (question && answer) {
+                                questions.push(question);
+                                answers.push(answer);
+                            }
+                        }
+                        fourDigitAnswer = xmlDoc.querySelector('ZoomSettings').getAttribute('q1a');
                         displayImage();
                     })
                     .catch(error => console.error('Error loading XML:', error));
@@ -100,7 +95,7 @@
 
             function displayImage() {
                 if (images.length > 0 && currentImageIndex < images.length) {
-                    quizImage.src = `./carcassQuiz/class1/${images[currentImageIndex]}`;
+                    quizImage.src = `./class1/${images[currentImageIndex]}`;
                 }
             }
 
