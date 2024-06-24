@@ -78,25 +78,27 @@
                         console.log(xmlDoc);
                         
                         for (let i = 1; i <= 5; i++) {
-                            const imageLink = xmlDoc.querySelector('ZoomSettings').getAttribute(`imageLink${i}`);
+                            const imageLink = xmlDoc.querySelector(`ZoomSettings imageLink${i}`);
                             if (imageLink) {
-                                images.push(imageLink);
+                                images.push(imageLink.textContent);
                             } else {
                                 console.warn(`imageLink${i} not found`);
                             }
                         }
                         for (let i = 1; i <= 10; i++) {
-                            const question = xmlDoc.querySelector('ZoomSettings').getAttribute(`q${i}`);
-                            const answer = xmlDoc.querySelector('ZoomSettings').getAttribute(`q${i}a`);
+                            const question = xmlDoc.querySelector(`ZoomSettings q${i}`);
+                            const answer = xmlDoc.querySelector(`ZoomSettings q${i}a`);
                             if (question && answer) {
-                                questions.push(question);
-                                answers.push(answer);
+                                questions.push(question.textContent);
+                                answers.push(answer.textContent);
                             } else {
                                 console.warn(`Question ${i} or its answer not found`);
                             }
                         }
-                        fourDigitAnswer = xmlDoc.querySelector('ZoomSettings').getAttribute('q1a');
-                        if (!fourDigitAnswer) {
+                        const q1a = xmlDoc.querySelector('ZoomSettings q1a');
+                        if (q1a) {
+                            fourDigitAnswer = q1a.textContent;
+                        } else {
                             console.warn('q1a attribute not found');
                         }
                         displayImage();
