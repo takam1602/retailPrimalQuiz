@@ -84,26 +84,28 @@
                         }
 
                         for (let i = 1; i <= 5; i++) {
-                            const imageLink = zoomSettings.getAttribute(`imageLink${i}`);
+                            const imageLink = zoomSettings.querySelector(`imageLink${i}`);
                             if (imageLink) {
-                                images.push(imageLink);
+                                images.push(imageLink.textContent);
                             } else {
                                 console.warn(`imageLink${i} not found`);
                             }
                         }
                         for (let i = 1; i <= 10; i++) {
-                            const question = zoomSettings.getAttribute(`q${i}`);
-                            const answer = zoomSettings.getAttribute(`q${i}a`);
+                            const question = zoomSettings.querySelector(`q${i}`);
+                            const answer = zoomSettings.querySelector(`q${i}a`);
                             if (question && answer) {
-                                questions.push(question);
-                                answers.push(answer);
+                                questions.push(question.textContent);
+                                answers.push(answer.textContent);
                             } else {
                                 console.warn(`Question ${i} or its answer not found`);
                             }
                         }
-                        fourDigitAnswer = zoomSettings.getAttribute('q1a');
-                        if (!fourDigitAnswer) {
-                            console.warn('q1a attribute not found');
+                        const q1a = zoomSettings.querySelector('q1a');
+                        if (q1a) {
+                            fourDigitAnswer = q1a.textContent;
+                        } else {
+                            console.warn('q1a element not found');
                         }
                         displayImage();
                     })
