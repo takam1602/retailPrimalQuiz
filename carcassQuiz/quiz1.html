@@ -75,30 +75,34 @@
                     .then(data => {
                         const parser = new DOMParser();
                         const xmlDoc = parser.parseFromString(data, 'application/xml');
-                        console.log(xmlDoc);
+                        console.log('Parsed XML Document:', xmlDoc);
                         
+                        const zoomSettings = xmlDoc.querySelector('ZoomSettings');
+                        if (!zoomSettings) {
+                            console.error('ZoomSettings element not found in XML');
+                            return;
+                        }
+
                         for (let i = 1; i <= 5; i++) {
-                            const imageLink = xmlDoc.querySelector(`ZoomSettings imageLink${i}`);
+                            const imageLink = zoomSettings.getAttribute(`imageLink${i}`);
                             if (imageLink) {
-                                images.push(imageLink.textContent);
+                                images.push(imageLink);
                             } else {
                                 console.warn(`imageLink${i} not found`);
                             }
                         }
                         for (let i = 1; i <= 10; i++) {
-                            const question = xmlDoc.querySelector(`ZoomSettings q${i}`);
-                            const answer = xmlDoc.querySelector(`ZoomSettings q${i}a`);
+                            const question = zoomSettings.getAttribute(`q${i}`);
+                            const answer = zoomSettings.getAttribute(`q${i}a`);
                             if (question && answer) {
-                                questions.push(question.textContent);
-                                answers.push(answer.textContent);
+                                questions.push(question);
+                                answers.push(answer);
                             } else {
                                 console.warn(`Question ${i} or its answer not found`);
                             }
                         }
-                        const q1a = xmlDoc.querySelector('ZoomSettings q1a');
-                        if (q1a) {
-                            fourDigitAnswer = q1a.textContent;
-                        } else {
+                        fourDigitAnswer = zoomSettings.getAttribute('q1a');
+                        if (!fourDigitAnswer) {
                             console.warn('q1a attribute not found');
                         }
                         displayImage();
