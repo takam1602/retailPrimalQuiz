@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>carcases Quiz1</title>
+    <title>carcases Quiz5</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -30,17 +30,17 @@
 </head>
 <body>
     <div class="content">
-        <h2>carcass quiz1</h2>
+        <h2>carcass quiz5</h2>
         <label for="timer-input">Set Timer (minutes): </label>
         <input type="number" id="timer-input" min="1" value="5">
         <div class="timer" id="timer">05:00</div>
         <button id="start-btn">Start</button>
+        <button id="ok-btn">I'm OK</button>
         <div class="image-container" id="image-container">
-            <button id="next-btn">Next</button>
             <button id="prev-btn">Previous</button>
             <img id="quiz-image" src="" alt="Quiz Image">
+            <button id="next-btn">Next</button>
         </div>
-        <button id="ok-btn">I'm OK</button>
         <div class="question-container" id="question-container"></div>
         <div class="answer-container" id="answer-container"></div>
         <button id="answer-btn" style="display:none;">Answer</button>
@@ -75,7 +75,7 @@
             let fourDigitAnswer;
 
             function loadXML() {
-                fetch('./class1/data_zoom.xml')
+                fetch('./class5/data_zoom.xml')
                     .then(response => response.text())
                     .then(data => {
                         const parser = new DOMParser();
@@ -119,7 +119,7 @@
 
             function displayImage() {
                 if (images.length > 0 && currentImageIndex < images.length) {
-                    quizImage.src = `./class1/${images[currentImageIndex]}`;
+                    quizImage.src = `./class5/${images[currentImageIndex]}`;
                 }
             }
 
