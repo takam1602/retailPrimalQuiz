@@ -1,60 +1,60 @@
-﻿<?xml version="1.0"?>
-<ZoomSettings
-    imageLink1="Beef_37_38_40_41_d.jpg"
-    imageLink2="Beef_37_38_40_41_c.jpg"
-    imageLink3="Beef_37_38_40_41_a.jpg"
-    imageLink4="Beef_37_38_40_41_b.jpg"
-    imageLink5="Eyemuscle_126_130_153_140.jpg"
-    imageSmoothing="false"
-    zoomMax="400"
-    zoomOutToExtreme="true"
-    zoomFactor="5.0"
-    panSpeed="5.0"
-    panWithinBoundary="true"
-    ease="3.5"
-    usePanButtons="true"
-    useDragOption="true"
-    controlBoxAutoHide="false"
-    controlBoxAutoHideDelay="2"
-    controlBoxVAlign="bottom"
-    controlBoxHAlign="right"
-    controlBoxSpace="10"
-    controlBoxBgColor="000000"
-    controlBoxBgTransparency="60"
-    controlButtonColor="FFFFFF"
-    controlButtonTransparency="100"
-    controlButtonArrowColor="000000"
-    BackgroundColor="FFFFFF"
-    BackgroundShadow="true"
-    Border="true"
-    BorderColor="F2F2F2"
-    initialZoomPercentage=""
-    initialHorizontalAlign=""
-    initialVerticalAlign=""
-    Noofsteps="5"
-    Noq="10"
-    q1="Place these carcases in order from 1st to 4th"
-    q1a="1342"
-    q1ajs="2-5-3"
-    q1ajc=""
-    q2="1. Which carcase has the most ossification?"
-    q2a="3"
-    q3="2. Which carcase has the yellowest fat?"
-    q3a="3"
-    q4="3. Which carcase has the fullest most muscular hind quarter?"
-    q4a="3"
-    q5="4. Which carcase has the largest eye muscle?"
-    q5a="3"
-    q6="5. Which carcase is the trimmest over the eye muscle?"
-    q6a="3"
-    q7="6. Which carcase has the smallest eye muscle?"
-    q7a="4"
-    q8="7. Which carcase is the fattest over the brisket?"
-    q8a="3"
-    q9="8. Which is the narrowest, lightest muscled carcase?"
-    q9a="2"
-    q10="9. Between 3 and 4 which is the leanest over the hind quarter?"
-    q10a="4"
-    q11="10. Between 1 and 2 which is the fattest over the rump and loin?"
-    q11a="2"
-/>
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ZoomSettings>
+    <imageLink1>Beef_37_38_40_41_d.jpg</imageLink1>
+    <imageLink2>Beef_37_38_40_41_c.jpg</imageLink2>
+    <imageLink3>Beef_37_38_40_41_a.jpg</imageLink3>
+    <imageLink4>Beef_37_38_40_41_b.jpg</imageLink4>
+    <imageLink5>Eyemuscle_126_130_153_140.jpg</imageLink5>
+    <imageSmoothing>false</imageSmoothing>
+    <zoomMax>400</zoomMax>
+    <zoomOutToExtreme>true</zoomOutToExtreme>
+    <zoomFactor>5.0</zoomFactor>
+    <panSpeed>5.0</panSpeed>
+    <panWithinBoundary>true</panWithinBoundary>
+    <ease>3.5</ease>
+    <usePanButtons>true</usePanButtons>
+    <useDragOption>true</useDragOption>
+    <controlBoxAutoHide>false</controlBoxAutoHide>
+    <controlBoxAutoHideDelay>2</controlBoxAutoHideDelay>
+    <controlBoxVAlign>bottom</controlBoxVAlign>
+    <controlBoxHAlign>right</controlBoxHAlign>
+    <controlBoxSpace>10</controlBoxSpace>
+    <controlBoxBgColor>000000</controlBoxBgColor>
+    <controlBoxBgTransparency>60</controlBoxBgTransparency>
+    <controlButtonColor>FFFFFF</controlButtonColor>
+    <controlButtonTransparency>100</controlButtonTransparency>
+    <controlButtonArrowColor>000000</controlButtonArrowColor>
+    <BackgroundColor>FFFFFF</BackgroundColor>
+    <BackgroundShadow>true</BackgroundShadow>
+    <Border>true</Border>
+    <BorderColor>F2F2F2</BorderColor>
+    <initialZoomPercentage></initialZoomPercentage>
+    <initialHorizontalAlign></initialHorizontalAlign>
+    <initialVerticalAlign></initialVerticalAlign>
+    <Noofsteps>5</Noofsteps>
+    <Noq>10</Noq>
+    <q1>Place these carcases in order from 1st to 4th</q1>
+    <q1a>1342</q1a>
+    <q1ajs>2-5-3</q1ajs>
+    <q1ajc></q1ajc>
+    <q2>1. Which carcase has the most ossification?</q2>
+    <q2a>3</q2a>
+    <q3>2. Which carcase has the yellowest fat?</q3>
+    <q3a>3</q3a>
+    <q4>3. Which carcase has the fullest most muscular hind quarter?</q4>
+    <q4a>3</q4a>
+    <q5>4. Which carcase has the largest eye muscle?</q5>
+    <q5a>3</q5a>
+    <q6>5. Which carcase is the trimmest over the eye muscle?</q6>
+    <q6a>3</q6a>
+    <q7>6. Which carcase has the smallest eye muscle?</q7>
+    <q7a>4</q7a>
+    <q8>7. Which carcase is the fattest over the brisket?</q8>
+    <q8a>3</q8a>
+    <q9>8. Which is the narrowest, lightest muscled carcase?</q9>
+    <q9a>2</q9a>
+    <q10>9. Between 3 and 4 which is the leanest over the hind quarter?</q10>
+    <q10a>4</q10a>
+    <q11>10. Between 1 and 2 which is the fattest over the rump and loin?</q11>
+    <q11a>2</q11a>
+</ZoomSettings>
