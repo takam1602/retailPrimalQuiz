@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carcases Quiz2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        .timer {
+            font-size: 24px;
+            margin: 20px 0;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+        .question-container, .answer-container {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h2>carcass quiz2</h2>
+        <label for="timer-input">Set Timer (minutes): </label>
+        <input type="number" id="timer-input" min="1" value="5">
+        <div class="timer" id="timer">05:00</div>
+        <button id="start-btn">Start</button>
+        <div class="image-container" id="image-container">
+            <button id="next-btn">Next</button>
+            <button id="prev-btn">Previous</button>
+            <img id="quiz-image" src="" alt="Quiz Image">
+        </div>
+        <button id="ok-btn">I'm OK</button>
+        <div class="question-container" id="question-container"></div>
+        <div class="answer-container" id="answer-container"></div>
+        <button id="answer-btn" style="display:none;">Answer</button>
+        <button id="clear-btn">Clear</button>
+    </div>
+    
+    <footer>
+        <p>Tatsuki Kamata @ NARO 2024</p>
+        <p><a href="https://github.com/takam1602/retailPrimalQuiz">takam1602/retailPrimalQuiz</a></p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            let timer;
+            let timeLeft;
+            const timerElement = document.getElementById('timer');
+            const timerInput = document.getElementById('timer-input');
+            const startBtn = document.getElementById('start-btn');
+            const okBtn = document.getElementById('ok-btn');
+            const prevBtn = document.getElementById('prev-btn');
+            const nextBtn = document.getElementById('next-btn');
+            const answerBtn = document.getElementById('answer-btn');
+            const clearBtn = document.getElementById('clear-btn');
+            const imageContainer = document.getElementById('image-container');
+            const quizImage = document.getElementById('quiz-image');
+            const questionContainer = document.getElementById('question-container');
+            const answerContainer = document.getElementById('answer-container');
+            let currentImageIndex = 0;
+            let images = [];
+            let questions = [];
+            let answers = [];
+            let fourDigitAnswer;
+
+            function loadXML() {
+                fetch('./class2/data_zoom.xml')
+                    .then(response => response.text())
+                    .then(data => {
+                        const parser = new DOMParser();
+                        const xmlDoc = parser.parseFromString(data, 'application/xml');
+                        console.log('Parsed XML Document:', xmlDoc);
+                        
+                        const zoomSettings = xmlDoc.querySelector('ZoomSettings');
+                        if (!zoomSettings) {
+                            console.error('ZoomSettings element not found in XML');
+                            return;
+                        }
+
+                        for (let i = 1; i <= 5; i++) {
+                            const imageLink = zoomSettings.querySelector(`imageLink${i}`);
+                            if (imageLink) {
+                                images.push(imageLink.textContent);
+                            } else {
+                                console.warn(`imageLink${i} not found`);
+                            }
+                        }
+                        for (let i = 2; i <= 11; i++) {
+                            const question = zoomSettings.querySelector(`q${i}`);
+                            const answer = zoomSettings.querySelector(`q${i}a`);
+                            if (question && answer) {
+                                questions.push(question.textContent);
+                                answers.push(answer.textContent);
+                            } else {
+                                console.warn(`Question ${i} or its answer not found`);
+                            }
+                        }
+                        const q1a = zoomSettings.querySelector('q1a');
+                        if (q1a) {
+                            fourDigitAnswer = q1a.textContent;
+                        } else {
+                            console.warn('q1a element not found');
+                        }
+                        displayImage();
+                    })
+                    .catch(error => console.error('Error loading XML:', error));
+            }
+
+            function displayImage() {
+                if (images.length > 0 && currentImageIndex < images.length) {
+                    quizImage.src = `./class2/${images[currentImageIndex]}`;
+                }
+            }
+
+            function startTimer() {
+                timeLeft = parseInt(timerInput.value) * 60;
+                updateTimerDisplay();
+                timer = setInterval(function() {
+                    if (timeLeft <= 0) {
+                        clearInterval(timer);
+                        showQuestions();
+                    } else {
+                        timeLeft--;
+                        updateTimerDisplay();
+                    }
+                }, 1000);
+            }
+
+            function updateTimerDisplay() {
+                const minutes = Math.floor(timeLeft / 60);
+                const seconds = timeLeft % 60;
+                timerElement.textContent = `${minutes < 10 ? '0' : ''}${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+            }
+
+            function showQuestions() {
+                imageContainer.style.display = 'none';
+                questionContainer.innerHTML = `<p>Place these carcases in order from 1st to 4th</p>
+                    <input type="text" id="four-digit-answer" maxlength="4">`;
+                questions.forEach((question, index) => {
+                    questionContainer.innerHTML += `<p>${question}</p>
+                        <input type="text" id="answer${index + 1}" maxlength="1">`;
+                });
+                answerBtn.style.display = 'block';
+            }
+
+            function checkAnswers() {
+                const userFourDigitAnswer = document.getElementById('four-digit-answer').value;
+                let correctAnswers = `Correct answers:<br>4-digit answer: ${fourDigitAnswer}<br>`;
+                questions.forEach((question, index) => {
+                    const userAnswer = document.getElementById(`answer${index + 1}`).value;
+                    correctAnswers += `${question} - ${answers[index]}<br>`;
+                });
+                answerContainer.innerHTML = correctAnswers;
+            }
+
+            function resetGame() {
+                clearInterval(timer);
+                timerElement.textContent = '05:00';
+                imageContainer.style.display = 'block';
+                answerBtn.style.display = 'none';
+                questionContainer.innerHTML = '';
+                answerContainer.innerHTML = '';
+                currentImageIndex = 0;
+                displayImage();
+            }
+
+            startBtn.addEventListener('click', startTimer);
+            okBtn.addEventListener('click', () => {
+                clearInterval(timer);
+                timeLeft = 0;
+                updateTimerDisplay();
+                showQuestions();
+            });
+            nextBtn.addEventListener('click', () => {
+                currentImageIndex = (currentImageIndex + 1) % images.length;
+                displayImage();
+            });
+            prevBtn.addEventListener('click', () => {
+                currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+                displayImage();
+            });
+            answerBtn.addEventListener('click', checkAnswers);
+            clearBtn.addEventListener('click', resetGame);
+
+            loadXML();
+        });
+    </script>
+</body>
+</html>

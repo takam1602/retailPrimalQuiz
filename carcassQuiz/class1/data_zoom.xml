@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ZoomSettings>
+    <imageLink1>Beef_2_4_6_22_d.jpg</imageLink1>
+    <imageLink2>Beef_2_4_6_22_c.jpg</imageLink2>
+    <imageLink3>Beef_2_4_6_22_a.jpg</imageLink3>
+    <imageLink4>Beef_2_4_6_22_b.jpg</imageLink4>
+    <imageLink5>Eyemuscle_019_032_026_033.jpg</imageLink5>
+    <imageSmoothing>false</imageSmoothing>
+    <zoomMax>400</zoomMax>
+    <zoomOutToExtreme>true</zoomOutToExtreme>
+    <zoomFactor>5.0</zoomFactor>
+    <panSpeed>5.0</panSpeed>
+    <panWithinBoundary>true</panWithinBoundary>
+    <ease>3.5</ease>
+    <usePanButtons>true</usePanButtons>
+    <useDragOption>true</useDragOption>
+    <controlBoxAutoHide>false</controlBoxAutoHide>
+    <controlBoxAutoHideDelay>2</controlBoxAutoHideDelay>
+    <controlBoxVAlign>bottom</controlBoxVAlign>
+    <controlBoxHAlign>right</controlBoxHAlign>
+    <controlBoxSpace>10</controlBoxSpace>
+    <controlBoxBgColor>000000</controlBoxBgColor>
+    <controlBoxBgTransparency>60</controlBoxBgTransparency>
+    <controlButtonColor>FFFFFF</controlButtonColor>
+    <controlButtonTransparency>100</controlButtonTransparency>
+    <controlButtonArrowColor>000000</controlButtonArrowColor>
+    <BackgroundColor>FFFFFF</BackgroundColor>
+    <BackgroundShadow>true</BackgroundShadow>
+    <Border>true</Border>
+    <BorderColor>F2F2F2</BorderColor>
+    <initialZoomPercentage></initialZoomPercentage>
+    <initialHorizontalAlign></initialHorizontalAlign>
+    <initialVerticalAlign></initialVerticalAlign>
+    <Noofsteps>5</Noofsteps>
+    <Noq>10</Noq>
+    <q1>Place these carcases in order from 1st to 4th</q1>
+    <q1a>3124</q1a>
+    <q1ajs>2-5-3</q1ajs>
+    <q1ajc></q1ajc>
+    <q2>How many carcases are males?</q2>
+    <q2a>4</q2a>
+    <q3>Which carcase has the yellowest fat?</q3>
+    <q3a>1</q3a>
+    <q4>Which carcase is the trimmest over the hind quarter?</q4>
+    <q4a>4</q4a>
+    <q5>Between 3 and 4, which carcase has the thickest chuck?</q5>
+    <q5a>4</q5a>
+    <q6>Which carcase has the heaviest muscled hind quarter?</q6>
+    <q6a>3</q6a>
+    <q7>Which carcase is the trimmest over the rib eye?</q7>
+    <q7a>4</q7a>
+    <q8>Which carcase has the smallest rib eye?</q8>
+    <q8a>3</q8a>
+    <q9>Which carcase is the trimmest over the lower rib?</q9>
+    <q9a>2</q9a>
+    <q10>Which carcase has the lightest muscled hind quarter?</q10>
+    <q10a>4</q10a>
+    <q11>Between 2 and 3 which carcase has the most marbling?</q11>
+    <q11a>3</q11a>
+</ZoomSettings>

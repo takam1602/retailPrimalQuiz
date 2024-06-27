@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ZoomSettings>
+    <imageLink1>Beef_29_34_38_40_d.jpg</imageLink1>
+    <imageLink2>Beef_29_34_38_40_c.jpg</imageLink2>
+    <imageLink3>Beef_29_34_38_40_a.jpg</imageLink3>
+    <imageLink4>Beef_29_34_38_40_b.jpg</imageLink4>
+    <imageLink5>Eyemuscle_114_104_088_083.jpg</imageLink5>
+    <imageSmoothing>false</imageSmoothing>
+    <zoomMax>400</zoomMax>
+    <zoomOutToExtreme>true</zoomOutToExtreme>
+    <zoomFactor>5.0</zoomFactor>
+    <panSpeed>5.0</panSpeed>
+    <panWithinBoundary>true</panWithinBoundary>
+    <ease>3.5</ease>
+    <usePanButtons>true</usePanButtons>
+    <useDragOption>true</useDragOption>
+    <controlBoxAutoHide>false</controlBoxAutoHide>
+    <controlBoxAutoHideDelay>2</controlBoxAutoHideDelay>
+    <controlBoxVAlign>bottom</controlBoxVAlign>
+    <controlBoxHAlign>right</controlBoxHAlign>
+    <controlBoxSpace>10</controlBoxSpace>
+    <controlBoxBgColor>000000</controlBoxBgColor>
+    <controlBoxBgTransparency>60</controlBoxBgTransparency>
+    <controlButtonColor>FFFFFF</controlButtonColor>
+    <controlButtonTransparency>100</controlButtonTransparency>
+    <controlButtonArrowColor>000000</controlButtonArrowColor>
+    <BackgroundColor>FFFFFF</BackgroundColor>
+    <BackgroundShadow>true</BackgroundShadow>
+    <Border>true</Border>
+    <BorderColor>F2F2F2</BorderColor>
+    <initialZoomPercentage></initialZoomPercentage>
+    <initialHorizontalAlign></initialHorizontalAlign>
+    <initialVerticalAlign></initialVerticalAlign>
+    <Noofsteps>5</Noofsteps>
+    <Noq>10</Noq>
+    <q1>Place these carcases in order from 1st to 4th</q1>
+    <q1a>1423</q1a>
+    <q1ajs>5-3-2</q1ajs>
+    <q1ajc></q1ajc>
+    <q2>1. Which carcase has the largest rib eye?</q2>
+    <q2a>1</q2a>
+    <q3>2. Between 1 and 3 which has the darkest meat colour?</q3>
+    <q3a>3</q3a>
+    <q4>3. Between 1 and 3 which carcase has more marbling?</q4>
+    <q4a>3</q4a>
+    <q5>4. Which carcase has the most seam fat?</q5>
+    <q5a>3</q5a>
+    <q6>5. Which has the brightest most acceptable meat colour?</q6>
+    <q6a>4</q6a>
+    <q7>6. Which carcase has the least seam fat?</q7>
+    <q7a>4</q7a>
+    <q8>7. Which carcase has the least rib fat at the rib eye?</q8>
+    <q8a>4</q8a>
+    <q9>8. Which carcase has the thickest, heaviest muscled chuck?</q9>
+    <q9a>1</q9a>
+    <q10>9. Which is the female carcase?</q10>
+    <q10a>4</q10a>
+    <q11>10. Which carcase is the fattest over the Topside?</q11>
+    <q11a>4</q11a>
+</ZoomSettings>
