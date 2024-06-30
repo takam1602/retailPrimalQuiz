@@ -105,3 +105,28 @@ src,region,salableItem,primal
 ./salableImg/higashi2024_beef_outisideflat.jpg,butt, outside flat, outside
 ./salableImg/higashi2024_beef_topside.png,butt,topside, topside
 ./salableImg/higashi2024_beef_rumpcap.png,butt,rump cap,rump
+./salableImg/2019/2019_bolarblade.png   ,forequarter,bolar blade,blade
+./salableImg/2019/2019_D-rump.png              ,butt,D-rump,rump
+./salableImg/2019/2019_navelendbrisket.png     ,forequarter,navel end brisket,brisket
+./salableImg/2019/2019_rumpcap.png             ,butt,rump cap,rump
+./salableImg/2019/2019_flanksteak_beef.png     ,flank,flank steak,thin flank
+./salableImg/2019/2019_beef_intercostals.png   ,ribset,intercostals,intercostals
+./salableImg/2019/2019_beef_chucktender.png    ,forequarter,chuck tender,blade
+./salableImg/2019/2019_beef_kidney.jpg         ,offal,kidnye,kidney
+./salableImg/2019/2019_beef_eyeround.jpg       ,butt,eye round,outside
+./salableImg/2019/2019_beef_insideskirt.jpg    ,flank,inside skirt,Abdominal cavity
+./salableImg/2019/2019_beef_rostbiff.jpg       ,butt,rostbiff,rump
+./salableImg/2019/2019_beef_cuberoll.jpg       ,forequarter,cube roll,cube roll
+./salableImg/2019/2019_beef_chuckroll.jpg      ,forequarter,chuck roll,chuck
+./salableImg/2019/2019_beef_tritip.jpg         ,butt,tri tip,rump
+./salableImg/2019/2019_beef_tenderloin.jpg     ,loin,tender loin,tender loin
+./salableImg/2019/2019_beef_striploin.jpg      ,loin,strip loin,shortloin
+./salableImg/2019/2019_beef_flapmeat.jpg       ,flank,flap meat,internal flank plate
+./salableImg/2019/2019_beef_tongue.jpg         ,offal,tongue,heat
+./salableImg/2019/2019_beef_oysterblade.jpg    ,forequarter,oyster blade,blade
+./salableImg/2019/2019_beef_topside.jpg        ,butt,topside,topside
+./salableImg/2019/2019_beef_pointendbrisket.jpg,forequarter,point end brisket,brisket
+./salableImg/2019/2019_beef_heart.jpg          ,offal,heart,thoracic cavity
+./salableImg/2019/2019_beef_topsidecapoff.jpg  ,butt,topside cap off,topside
+./salableImg/2019/2019_beef_knuckle.jpg        ,butt,knuckle,thick flank
+./salableImg/2019/2019_beef_outsideflat.jpg,butt,outside flant,outside
