@@ -3,102 +3,308 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meat Cut Quiz</title>
+    <title>Meat Cut Quiz Collection</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 20px;
+        :root {
+            --primary-color: #3a6ea5; /* Main blue color */
+            --secondary-color: #f0f5fa; /* Light blue tint */
+            --accent-color: #ff6b6b; /* Accent color for buttons/highlights */
+            --green-primary: #2e8b57; /* Green for alternative sections */
+            --green-secondary: #f0f8f1; /* Light green tint */
+            --text-color: #333;
+            --light-gray: #f5f5f5;
+            --border-color: #ddd;
+        }
+        
+        * {
+            box-sizing: border-box;
             margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            line-height: 1.6;
             display: flex;
             flex-direction: column;
             min-height: 100vh;
         }
-        .content {
+        
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        header p {
+            font-size: 1.1rem;
             max-width: 800px;
             margin: 0 auto;
-            text-align: left;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
             flex-grow: 1;
         }
-        .links {
-            margin-top: 20px;
-            text-align: center;
+        
+        .section {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin-bottom: 40px;
         }
-        .links a {
-            margin: 0 10px;
+        
+        .section:nth-child(even) {
+            background-color: var(--light-gray);
+        }
+        
+        .section-title {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid var(--border-color);
+        }
+        
+        .section-title h2 {
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            margin-right: 15px;
+        }
+        
+        .section-title.green h2 {
+            color: var(--green-primary);
+        }
+        
+        .section-desc {
+            margin-bottom: 25px;
+            font-size: 1.05rem;
+        }
+        
+        .quiz-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 25px 0;
+            justify-content: center;
+        }
+        
+        .quiz-link {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: var(--primary-color);
+            color: white;
             text-decoration: none;
-            color: #007bff;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
-        .links a:hover {
-            text-decoration: underline;
+        
+        .quiz-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+            background-color: #2a5a8f;
         }
+        
+        .green-section .quiz-link {
+            background-color: var(--green-primary);
+        }
+        
+        .green-section .quiz-link:hover {
+            background-color: #236b43;
+        }
+        
+        .carcass-section .quiz-link {
+            background-color: var(--accent-color);
+        }
+        
+        .carcass-section .quiz-link:hover {
+            background-color: #ff5252;
+        }
+        
+        .image-gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 25px 0;
+        }
+        
+        .image-gallery img {
+            max-width: 300px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .image-gallery img:hover {
+            transform: scale(1.03);
+        }
+        
+        .alert-box {
+            background-color: #fff3cd;
+            color: #856404;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+            border-left: 5px solid #ffeeba;
+        }
+        
         footer {
-            background-color: #f1f1f1;
-            padding: 10px 0;
+            background-color: #333;
+            color: white;
             text-align: center;
-            width: 100%;
+            padding: 25px 0;
+            margin-top: auto;
         }
+        
+        footer p {
+            margin: 5px 0;
+        }
+        
         footer a {
-            color: #007bff;
+            color: #6bb9ff;
             text-decoration: none;
+            transition: color 0.3s;
         }
+        
         footer a:hover {
+            color: #a0d3ff;
             text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px 15px;
+            }
+            
+            .section {
+                padding: 20px;
+            }
+            
+            .image-gallery img {
+                max-width: 100%;
+            }
+            
+            .section-title {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .quiz-links {
+                flex-direction: column;
+            }
+            
+            .quiz-link {
+                width: 100%;
+                text-align: center;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="content">
-        <h1>Meat quiz</h1>
-        <p>Welcome to the Meat judge quiz!<br>
-        このクイズはICMJオーストラリア大会のRetail cut Identification とSaleable items identificationの練習用です．画像は無断転用してしまっているので好ましくはないのですが,,, トレーニング専用で，SNSの投稿や動画配信への使用は控えていただきたく思います．</p>
-        
-        <h2>Retail/Salable quiz</h2>
-        <p>画像が表示されますので，それを見て回答を入力します．入力し終えたらanswer ボタンを押して回答を確認します．正解していたらnext ボタンで次の画像へ，間違っていたら表示される答えと見比べて復習します．※回答は大文字小文字の区別なく入力して大丈夫です．スペースの有無はマニュアルに沿っています．bone in やboneless に注意です．</p>
-
-        <div class="links">
-            <a href="retailquiz.html">Retail Cut</a>
-            <a href="salablequiz.html">Salable Item</a>
+    <header>
+        <h1>Meat Cut Quiz Collection</h1>
+        <p>ICMJ オーストラリア大会の練習用クイズ</p>
+    </header>
+    
+    <div class="container">
+        <div class="section">
+            <div class="section-title">
+                <h2>Welcome to the Meat Judge Quiz!</h2>
+            </div>
+            
+            <div class="section-desc">
+                <p>このクイズはICMJオーストラリア大会のRetail cut Identification とSaleable items identificationの練習用です。claude のおかげできれいになりました。</p>
+                <div class="alert-box">
+                    <p>※ 画像は無断転用してしまっているので好ましくはないのですが、トレーニング専用で使用しています。SNSの投稿や動画配信への使用は控えていただきたく思います。</p>
+                </div>
+            </div>
         </div>
-
-        <h1>Color quiz</h1>
-        <p>色が表示されますので，それを見て回答を入力します．回答はAusmeatのスコアを入力してください．入力し終えたらanswer ボタンを押して回答を確認します．正解していたらnext ボタンで次の画像へ，間違っていたら表示される答えと見比べて復習します．</p>
         
-        <img src="./mcImg/meatColor.png" alt="Meat color" width="400">
-        <img src="./fcImg/fatColor.png" alt="Fat color" width="400">
-        <img src="./marbleImg/marbling.png" alt="Marbling" width="400">
+        <div class="section">
+            <div class="section-title">
+                <h2>Retail & Salable Quiz</h2>
+            </div>
+            
+            <div class="section-desc">
+                <p>ratail やsalable のIDクラス向けのトレーニングです。画像が表示されますので、回答を入力てください。
 
-        <div class="links">
-            <a href="meatColorJudge.html">Meat Color</a> 
-            <a href="fatColorJudge.html">Fat Color</a>
-            <a href="marbleJudge.html">Marbling</a>
+                Answer ボタンを押すと回答が表示され、問題なかったらNext ボタンを押すと次に進みます。</p>
+
+                <p>※ 回答は大文字小文字の区別なく入力して大丈夫です。スペースの有無はマニュアルに沿っています。bone in やboneless に注意です。</p>
+            </div>
+            
+            <div class="quiz-links">
+                <a href="retailquiz.html" class="quiz-link">Retail Cut Quiz</a>
+                <a href="salablequiz.html" class="quiz-link green-section">Salable Item Quiz</a>
+            </div>
+        </div>
+        
+        <div class="section green-section">
+            <div class="section-title green">
+                <h2>Color Quiz</h2>
+            </div>
+            
+            <div class="section-desc">
+                <p>Beef pricing やEating quality 向けのトレーニングです。Ausmeatのスコアを入力してください。<p>
+            </div>
+            
+            <div class="image-gallery">
+                <img src="./mcImg/meatColor.png" alt="Meat color" width="300">
+                <img src="./fcImg/fatColor.png" alt="Fat color" width="300">
+                <img src="./marbleImg/marbling.png" alt="Marbling" width="300">
+            </div>
+            
+            <div class="quiz-links">
+                <a href="meatColorJudge.html" class="quiz-link">Meat Color Quiz</a>
+                <a href="fatColorJudge.html" class="quiz-link">Fat Color Quiz</a>
+                <a href="marbleJudge.html" class="quiz-link">Marbling Quiz</a>
+            </div>
+        </div>
+        
+        <div class="section carcass-section">
+            <div class="section-title">
+                <h2>Beef Carcass Quiz</h2>
+            </div>
+            
+            <div class="section-desc">
+                <p>exeをhtml + js に移植しています。諸々、移植作業中ですので不具合があるかもしれません。</p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li>使い方：時間を選んで、Start ボタンを押すとタイマーがスタートします。</li>
+                    <li>PreviousやNext ボタンを押すと画像が切り替わります。</li>
+                    <li>タイマーが終わる または I'm Ok ボタンを押すと解答欄が出てくるので解答を入力します。</li>
+                    <li>Answer ボタンを押すと答えが表示されます。</li>
+                    <li>Clear ボタンを押すと最初からやり直せます。</li>
+                </ul>
+            </div>
+            
+            <div class="quiz-links">
+                <a href="./carcassQuiz/quiz1.html" class="quiz-link">Quiz 1</a>
+                <a href="./carcassQuiz/quiz2.html" class="quiz-link">Quiz 2</a>
+                <a href="./carcassQuiz/quiz3.html" class="quiz-link">Quiz 3</a>
+                <a href="./carcassQuiz/quiz4.html" class="quiz-link">Quiz 4</a>
+                <a href="./carcassQuiz/quiz5.html" class="quiz-link">Quiz 5</a>
+            </div>
         </div>
     </div>
-
-    <h1>Beef carcass quiz</h1>
-    <p> exeをhtml + js に移植しています。
-    諸々、移植作業中ですので不具合があるかもしれません。<br>
-
-    使い方，時間を選んで，start ボタンを押すとタイマーがスタートします。<br>
-    previousやnext ボタンを押すと画像が切り替わります．<br>
-
-    タイマーが終わる or I'm Ok ボタンを押すと解答欄が出てくるので解答を入力する．<br>
     
-    answer ボタンを押すと答えが表示される．<br>
-
-    clear ボタンを押すと最初から．</p>
-
-    <div class="links">
-            <a href="./carcassQuiz/quiz1.html">quiz1</a> 
-            <a href="./carcassQuiz/quiz2.html">quiz2</a> 
-            <a href="./carcassQuiz/quiz3.html">quiz3</a> 
-            <a href="./carcassQuiz/quiz4.html">quiz4</a> 
-            <a href="./carcassQuiz/quiz5.html">quiz5</a> 
-        </div>
-
     <footer>
-        <p>Tatsuki Kamata @ NARO 2025</p>
-        <p><a href="https://github.com/takam1602/retailPrimalQuiz">takam1602/retailPrimalQuiz</a></p>
+        <p>2025 takam1602</p> <p><a href="https://github.com/takam1602/retailPrimalQuiz" target="_blank">GitHub: takam1602/retailPrimalQuiz</a></p>
     </footer>
 </body>
 </html>
