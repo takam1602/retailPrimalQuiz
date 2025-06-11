@@ -317,6 +317,65 @@
    let currentImageIndex = -1;
 
    function loadRandomImage() {
-    if (images.length > 0) {
-     currentImageIndex = Math.floor(Math.random() * images.length);
-     const selectedImage = images
+                if (images.length > 0) {
+                    currentImageIndex = Math.floor(Math.random() * images.length);
+                    const selectedImage = images[currentImageIndex];
+                    console.log("選択された画像データ:", selectedImage);
+                    if (selectedImage && selectedImage.src) {
+                        meatImage.src = selectedImage.src;
+                    } else {
+                        console.error("画像データが不正です:", selectedImage);
+                        meatImage.src = "";
+                    }
+                    resultDiv.textContent = '';
+                    salableItemInput.value = '';
+                    regionInput.value = '';
+                    primalInput.value = '';
+                } else {
+                    console.error("画像データがありません");
+                }
+            }
+
+            function normalizeInput(input) {
+                return input.trim().toLowerCase().replace(/[\s\u3000]+/g, ' ');
+            }
+
+            function checkAnswer() {
+                if (currentImageIndex === -1) return;
+
+                const salableItem = normalizeInput(salableItemInput.value);
+                const region = normalizeInput(regionInput.value);
+                const primal = normalizeInput(primalInput.value);
+
+                const correctData = images[currentImageIndex];
+
+                const correctSalableItem = normalizeInput(correctData.salableItem);
+                const correctRegion = normalizeInput(correctData.region);
+                const correctPrimal = normalizeInput(correctData.primal);
+
+                if (salableItem === correctSalableItem &&
+                    region === correctRegion &&
+                    primal === correctPrimal) {
+                    resultDiv.innerHTML = '<div class="correct-answer">Correct!</div>';
+                } else {
+                    resultDiv.innerHTML = `
+                        <table class="result-table">
+                            <tr>
+                                <th>Salable Item Name:</th>
+                                <td>${correctData.salableItem}</td>
+                            </tr>
+                            <tr>
+                                <th>Region:</th>
+                                <td>${correctData.region}</td>
+                            </tr>
+                            <tr>
+                                <th>Primal:</th>
+                                <td>${correctData.primal}</td>
+                            </tr>
+                        </table>`;
+                }
+            }
+        });
+    </script>
+</body>
+</html>
