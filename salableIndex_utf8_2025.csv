@@ -1,13 +1,12 @@
 src,region,salableItem,primal
-./salableImg/2025/b_blade.JPG,forequarter,blade,blade
-./salableImg/2025/b_chuckroll.JPG,forequarter,chuckroll,chuck
-./salableImg/2025/b_chucktender.JPG,forequarter,chuck tender,blade
-./salableImg/2025/b_cuberoll.JPG,forequarter,cuberoll,cube roll
-./salableImg/2025/b_eyeround.JPG,butt,eye round, outside
-./salableImg/2025/b_flanksteak.JPG,thin flank,flank steak, flank
-./salableImg/2025/b_heart.JPG,offal, heart, thoracic cavity
-./salableImg/2025/b_intercostals.JPG,rib set, intercostals, intercostals
-./salableImg/2025/b_knucklecentere.JPG,butt, knuckle centere, knuckle
-./salableImg/2025/b_knuckle.JPG,butt,knuckle,thick flank
-./salableImg/2025/b_liver.JPG,offal,liver,liver
-./salableImg/2025/b_navelendbrisket.JPG,forequarter,navel end brisket, brisket
+./salableImg/2025/b_higashi_rumpcap.JPG,butt,rump cap, rump
+./salableImg/2025/b_higashi_oysterblade.JPG,forequarter,oyster blade,blade
+./salableImg/2025/b_higashi_topsidecapoff.JPG,butt, topside cap off, topside
+./salableImg/2025/b_higashi_pointendbrisket.JPG,forequarter,point end brisket, brisket
+./salableImg/2025/b_higashi_bolarblade.JPG,forequarter, bolar blade, blade
+./salableImg/2025/b_higashi_striploin.JPG, loin, strip loin, shortloin
+./salableImg/2025/b_higashi_flapMeat.JPG, flank, flap meat, internal flank plate
+./salableImg/2025/b_higashi_chucktender.JPG, forequarter, chuck tender, blade
+./salableImg/2025/b_higashi_chuckroll.JPG, forequarter, cube roll, cube roll 
+./salableImg/2025/b_hiashi_thickflank.JPG, butt, thick flank, thick flank
+./salableImg/2025/b_higashi_navelendBrisket.JPG, forequarter, navel end brisket, brisket
