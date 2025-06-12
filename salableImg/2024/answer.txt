@@ -1,0 +1,25 @@
+1, knuckle, butt, thick flank
+2, flank steak, flank, thin flank
+3, knucle centere, butt, knuckle
+4, top side cap off, butt, topside
+5, chuck tender, forequarter, blade 
+6, eye round, butt, outside
+7, blade, forequarter, blade
+8, oyster blade, forequarter, blade
+9, bolar blade, forequarter, blade
+10, outside flat, butt, outside
+11, rump, butt, rump
+12, intercostals, rib set, intercostals
+13, strip loin, loin, shortloin
+14, topside, butt, topside
+15, short ribs, rib set, short ribs
+16, navel end brisket, forequarter, brisket
+17, shortloin, loin, shortloin
+18, outside, butt, silver side
+19, tenderloin, loin, tenderloin
+20, rump cap, butt, rump
+21, liver, offal, liver,
+22, tendons, offal, tendons
+23, tail, offal, tail
+24, tongue, offal, tongue
+25, heart, offal, thoracic cavity
