@@ -260,7 +260,7 @@
             const primalInput = document.getElementById('primal-name');
 
             // CSVファイルの読み込みと解析
-            Papa.parse('retailIndex_utf8_2018.csv', {
+            Papa.parse('./retailIndex_utf8_2018.csv', {
                 download: true,
                 header: true,
                 skipEmptyLines: true,
